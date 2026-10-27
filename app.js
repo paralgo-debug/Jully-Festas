@@ -16,8 +16,8 @@ lista.querySelector(".voltar").onclick=fechar;document.getElementById("produtos"
 function fechar(){lista.hidden=true;cats.hidden=false;document.getElementById("produtos").scrollIntoView()}
 cats.onclick=e=>{const b=e.target.closest("button[data-i]");if(b)abrir(+b.dataset.i)};
 // galeria (fotos em img/galeria/)
-const g=[1,2,3,4,5].map(n=>`<img loading="lazy" src="foto-${n}.jpg" alt="Festa com brinquedos da Jully Festas">`).join("")+`<div class="ph">📷<br>Suas próximas fotos entram aqui</div>`;
-document.getElementById("trk").innerHTML=g+g;
+const mk=dup=>[1,2,3,4,5].map(n=>`<img src="foto-${n}.jpg" ${dup?'alt="" aria-hidden="true"':'alt="Festa com brinquedos da Jully Festas"'} decoding="async">`).join("");
+document.getElementById("trk").innerHTML=mk(false)+mk(true);
 // balões
 const cs=["#E8281E","#FFC928","#34B233","#A230C8","#FF8A00","#fff"];
 document.getElementById("bals").innerHTML=Array.from({length:9},(_,i)=>`<div class="bal" style="left:${5+i*11}%;background:${cs[i%6]};animation-duration:${11+i%4*3}s;animation-delay:-${i*2}s"></div>`).join("");
