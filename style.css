@@ -61,3 +61,11 @@ footer img{height:90px}footer a{text-decoration:underline}
 .r{display:block;transition:.25s}a.r:hover{transform:translateY(-6px);box-shadow:0 16px 30px rgba(30,144,255,.28)}.r p{margin:8px 0}.r em{display:block;margin-top:10px;font-style:normal;color:var(--ceu);font-weight:700;font-size:.9rem}
 .voltar{background:var(--claro);color:var(--ceu);margin-bottom:6px;box-shadow:none}
 #cats .grid{margin-top:8px}.cc .ft{aspect-ratio:16/10}.cc .n{font-weight:800;color:var(--c)}
+
+.sl{position:absolute;inset:0}
+.sl img{opacity:0;z-index:1;object-position:center 40%;transition:opacity 0s .8s}
+.sl img.on{opacity:1;z-index:2;transition:opacity .8s}
+.dt{position:absolute;left:0;right:0;bottom:9px;z-index:3;display:flex;justify-content:center;gap:7px}
+.dt button{position:relative;width:9px;height:9px;padding:0;border:0;border-radius:99px;background:rgba(255,255,255,.65);box-shadow:0 1px 4px rgba(0,0,0,.35);cursor:pointer;transition:width .25s,background .25s}
+.dt button:after{content:"";position:absolute;inset:-9px -5px}
+.dt button.on{width:22px;background:#fff}
