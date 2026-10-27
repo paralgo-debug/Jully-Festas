@@ -5,10 +5,10 @@ body{font-family:Nunito,system-ui,sans-serif;color:var(--tx);background:var(--bg
 h1,h2,h3,.b{font-family:'Baloo 2',Nunito,sans-serif;line-height:1.1}
 a{color:inherit;text-decoration:none}
 .w{max-width:1180px;margin:auto;padding:0 18px}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);box-shadow:0 2px 14px rgba(30,144,255,.15)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:#178dfd;box-shadow:0 3px 14px rgba(0,60,140,.25)}
 header .w{display:flex;align-items:center;gap:14px;height:68px}
-header img{height:56px;width:56px}
-nav{display:flex;gap:6px;margin-left:auto}nav a{padding:8px 12px;border-radius:99px;font-weight:700}nav a:hover{background:var(--claro)}
+header img{height:60px;width:60px;display:block}
+nav{display:flex;gap:6px;margin-left:auto}nav a{padding:8px 12px;border-radius:99px;font-weight:700;color:#fff}nav a:hover{background:rgba(255,255,255,.22)}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:99px;font-weight:800;font-family:'Baloo 2';font-size:1.05rem;border:0;cursor:pointer;transition:.2s;box-shadow:0 5px 0 rgba(0,0,0,.15)}
 .btn:hover{transform:translateY(-3px)}.btn:focus-visible,a:focus-visible{outline:3px solid var(--am);outline-offset:2px}
 .zap{background:var(--ver);color:#fff}.am{background:var(--am);color:var(--tx)}.br{background:#fff;color:var(--ceu)}
@@ -32,9 +32,8 @@ nav{display:flex;gap:6px;margin-left:auto}nav a{padding:8px 12px;border-radius:9
 section{padding:64px 0}
 .t{font-size:clamp(1.8rem,4vw,2.7rem);text-align:center;color:var(--ceu)}.st{text-align:center;margin:8px 0 34px;font-size:1.1rem}
 .gal{background:var(--claro);overflow:hidden;padding:48px 0}
-.trk{display:flex;gap:16px;width:max-content;animation:rola 40s linear infinite}.gal:hover .trk{animation-play-state:paused}
+.trk{display:flex;gap:16px;width:max-content;animation:rola 40s linear infinite}@media(hover:hover){.gal:hover .trk{animation-play-state:paused}}
 .trk img{height:260px;width:auto;border-radius:22px;box-shadow:var(--sh);border:5px solid #fff}
-.trk .ph{height:260px;width:200px;border-radius:22px;border:3px dashed var(--ceu2);display:grid;place-items:center;text-align:center;padding:14px;color:var(--ceu);font-weight:700;background:#fff8}
 @keyframes rola{to{transform:translateX(-50%)}}
 .cat{margin:42px 0 20px;display:flex;align-items:center;gap:12px;padding:12px 20px;border-radius:22px;color:#fff;font-size:1.5rem;font-family:'Baloo 2';font-weight:800;box-shadow:0 5px 0 rgba(0,0,0,.12)}
 .cat small{margin-left:auto;font-size:.95rem;opacity:.9}
